@@ -1,0 +1,430 @@
+body{
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side{
+    display: flex;
+}
+.navbar > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.left-side-nav-link{
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border bottom 0.5s;
+
+}
+.left-side-nav-link a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.left-side-nav-link:hover{
+    border-bottom: 1px solid black;
+}
+.left-side-nav-link a:hover{
+    color: black;
+}
+
+.navbar > .right-side > div{
+    
+    text-transform: uppercase;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+/*portfolio style*/
+.port_folio_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.port_folio_item{
+    position: relative;
+}
+.port_folio_img_background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;;
+}
+.img-text .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.img-text:hover .subtitle{
+    font-weight: 600;
+    color: white;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-image img{
+    height: 500px;
+}
+.profile-content{
+    padding: 30px;
+}
+.profile-content h1{
+    color: lightseagreen;
+}
+
+
+/*Skills and interest section */
+
+.skill{
+    padding: 41px 0px;
+}
+
+.img-common{
+    display:flex;
+justify-content:space-between;
+
+    /* margin: 50%;
+    padding: 10px; */
+   
+}
+
+.img{
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    /* box-shadow: 5px 5px 5px 5px lightgray; */
+    text-align: center;
+    /* flex: 1; */
+    /* margin: 40%; */
+}
+/* .img:hover{
+    transform: scale(1.1);
+z-index: 1;
+} */
+
+.img h1,p{
+    margin: 0;
+}
+
+.img h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+  .img:hover{
+    color:white;
+    background-color:lightslategray;
+
+} 
+.img-parent img{
+    width: 100%;
+    height: 100%;
+   
+}
+.img-parent{
+    height: 200px;
+   
+    
+}
+
+
+/* .img-parent:hover{
+    color:white;
+    background-color: red;
+
+} */
+
+/* second section */
+.image-collection{
+    margin: 10%;
+}
+.image-parent{
+    margin: -13%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.img-box{
+    position: relative;
+    height: 200px;
+
+}
+.img-section img{
+    width: 100%;
+    height: 200px;
+}
+
+.img-text-section{
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    /* color: white; */
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: 1s;
+font-weight: 600;
+color: transparent;
+}
+
+.img-text-section:hover{
+    font-weight: 600;
+color: white;
+}
+
+.img-darken-interest{
+    transition: 1s;
+    filter: brightness(10%);
+        }
+
+/*Contact section */
+
+.contact{
+    margin: 1%;
+    padding: 0px;
+    /* border-radius: 1px solid black; */
+    position: relative;
+    
+}
+.top{
+    background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8&auto=format&fit=crop&w=600&q=60');
+    background-color: skyblue; 
+    padding-bottom: 121px;
+  
+}
+
+
+
+.top-content{
+   
+    text-align: center;
+    color: white;
+    padding: 71px;
+    z-index: 999999999999999999999999;
+}
+.content h1{
+    /* font-size: 100px; */
+    padding-bottom: 0px;
+    margin: 0;
+}
+.content p{
+    /* font-size: 50px; */
+     padding-bottom: 0px; 
+     margin: 0;
+}
+.bottom{
+    background-color: white;
+    padding: 116px;
+}
+/*form */
+.form{
+margin: 0%;
+padding: 50px;
+/* border: 1px solid black; */
+background-color: white;
+
+}
+
+.form label{
+color: #8a8a8a;
+
+}
+
+
+
+
+.form-parent{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.form-parent input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.message{
+padding-left: 10px;
+}
+
+.message input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+
+.form-contact{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 19%;
+position: absolute;
+top: 161px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+
+}
+
+.form-left{
+    padding-right: 10px;
+}
+.contact-info{
+background-color: green;
+color: white;
+padding: 50px;
+}
+
+.contact-title h2{
+    margin: 0%;
+}
+
+.contact-content{
+    padding: 10px;
+    line-height: 2em;
+}
+
+/*button*/
+.btn{
+    background-color: #008CBA;;
+    color: white;
+    margin: 10px;
+   padding: 12px;
+   border-radius: 4px;
+}
+
+/* icons*/
+.icons{
+    display: flex;
+    margin: -14px;
+    padding-top: 52px;
+    padding-left: 8px;
+
+}
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-facebook {
+ 
+    color: white;
+  }
+  .fa-twitter {
+    
+    color: white;
+  }
+  .fa-linkedin {
+    
+    color: white;
+  }
+
+  .fa-youtube {
+    
+    color: white;
+  }
+           
+  .fa-phone-square{
+      padding-left: 0px;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+
+  .fa-envelope-o{
+    padding-left: 0px;
+    padding-top: 0;
+      padding-bottom: 0;
+  }
+  .fa-map-marker{
+    padding-left: 0px;
+    padding-top: 0;
+      padding-bottom: 0;
+  }
+  .fa-dribbble{
+    padding-left: 0px;
+    padding-top: 0;
+      padding-bottom: 0;
+  }
+
+
+  /* media queries  */
+  /* laptop */
+@media(max-width:1366px){
+    .form-contact{
+        
+        margin: 12%;
+        /* position: absolute; */
+        top: 161px;
+        
+        
+        }
+    }
+
+
+    @media(max-width:769px){
+
+    }
+
+    @media(max-width:576px){
+        .port_folio_items{
+            display: block;
+        }  
+
+        /* About page */
+
+        .two-column{
+                    display: block;
+                    }
+         .profile-content h1{
+                        color: black;
+                    }
+                    
+
+    }

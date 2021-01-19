@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="left-side">
+                <div class="left-side-nav-link active-nav-link">
+                    <a href="index.html" >Home</a>
+                </div>
+                <div class="left-side-nav-link">    
+                    <a href="about.html">About</a>
+                </div>
+                <div class="left-side-nav-link">    
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>      
+            <div class="right-side">
+                <div class="name">
+                    <div>Baskaran</div>     
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            
+            <div class="port_folio_items">
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio1.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo1.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio2.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo2.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio3.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo3.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio4.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo4.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio5.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo5.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio6.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo6.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio7.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo7.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio8.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo8.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+                <div class="port_folio_item">
+                    <div class="port_folio_img_background" style="background-image: url(images/portfolio9.jpg);"></div>
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo9.png">
+                        </div>
+                        <div class="subtitle">
+                            This is my first sample portfolio.Hope you like it.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems=document.querySelectorAll('.port_folio_item')
+        portfolioItems.forEach(item => {
+            item.addEventListener(
+                'mouseover',() => {
+                    item.childNodes[1].classList.add('img-darken');
+                })
+                item.addEventListener(
+                'mouseout',() => {
+                    item.childNodes[1].classList.remove('img-darken');
+                })
+        })
+</script>
+<script>
+
+        /* interest */
+         const portfolioItems=document.querySelectorAll('.img-box')
+        portfolioItems.forEach(item => {
+            item.addEventListener(
+                'mouseover',() => {
+                     item.childNodes[1].classList.add('img-darken-interest');
+                })
+                item.addEventListener(
+                'mouseout',() => {
+                    item.childNodes[1].classList.remove('img-darken-interest');
+                })
+         })
+
+</script>
+</html>
